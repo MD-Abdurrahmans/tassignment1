@@ -26,52 +26,84 @@
 </head>
 
 <body>
-  <header class="max-w-7xl mx-auto my-12 px-4">
+  <header class="max-w-7xl mx-auto my-5 md:my-12 px-4">
+
+
+
+
     <nav>
       <header class="p-2  md:bg-[#F85559] md:text-white md:rounded-full">
-        <div class="container flex justify-between h-16 mx-auto">
-          <ul class="items-stretch hidden space-x-3 lg:flex text-lg font-medium">
-            <li class="flex">
-              <a rel="noopener noreferrer" href="#"
-                class="flex items-center px-4 -mb-1 dark:border-transparent dark:text-violet-400 dark:border-violet-400">Home</a>
-            </li>
-            <li class="flex">
-              <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 dark:border-transparent"> About
-                Us</a>
-            </li>
-            <li class="flex">
-              <a rel="noopener noreferrer" href="#"
-                class="flex items-center px-4 -mb-1 dark:border-transparent">Shop</a>
-            </li>
-            <li class="flex">
-              <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 dark:border-transparent">All
-                Fruits</a>
-            </li>
-          </ul>
+        <div class="container flex  justify-between h-16  items-center md:grid md:grid-cols-3 ">
 
-          <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2">
+     
+        <ul class="items-stretch  hidden  space-x-3 lg:flex text-lg font-medium">
+          <li class="flex">
+            <a rel="noopener noreferrer" href="#"
+              class="flex items-center px-4 -mb-1 dark:border-transparent dark:text-violet-400 dark:border-violet-400">Home</a>
+          </li>
+          <li class="flex">
+            <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 dark:border-transparent"> About
+              Us</a>
+          </li>
+          <li class="flex">
+            <a rel="noopener noreferrer" href="#"
+              class="flex items-center px-4 -mb-1 dark:border-transparent">Shop</a>
+          </li>
+          <li class="flex">
+            <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 dark:border-transparent">All
+              Fruits</a>
+          </li>
+        </ul>
+     
 
-            <img src="./images/logo.png" alt="" srcset="">
+          <a  href="#"class="flex  justify-center items-center">
 
-            <span class="text-4xl font-bold">Fruit Burst</span>
+            <img src="./images/logo.png" class="w-10 " alt="" srcset="">
+
+            <span class="text-lg mx-1 md:text-24xl font-bold">Fruit Burst</span>
           </a>
-          <div class="flex   invisible items-center  md:visible md:space-x-4">
-            <div class="relative">
+
+          <div class="flex md:w-full   invisible items-center  md:visible md:space-x-4">
+            <div class="relative w-full">
               <span class="absolute inset-y-0 left-0 flex items-center pl-2">
 
               </span>
               <input type="search" name="Search" placeholder="Search here..."
-                class="w-32 py-2 pl-10 text-sm rounded-full  sm:w-auto focus:outline-none dark:bg-gray-800 dark:text-gray-100 focus:dark:bg-gray-900">
+                class="lg:w-full py-2 pl-20 text-sm rounded-full  sm:w-auto focus:outline-none">
               <i class="fa-solid fa-magnifying-glass absolute top-3 text-black right-4"></i>
             </div>
 
           </div>
-          <button title="Open menu" type="button" class="p-4 lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-              class="w-6 h-6 dark:text-gray-100">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
+
+     
+
+          <div class="dropdown relative">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+        
+            <ul tabindex="0" class="menu menu-sm  absolute -left-40  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <a rel="noopener noreferrer" href="#"
+              class="flex items-center px-4 -mb-1 dark:border-transparent dark:text-violet-400 dark:border-violet-400">Home</a>
+          </li>
+          <li class="flex">
+            <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 dark:border-transparent"> About
+              Us</a>
+          </li>
+          <li class="flex">
+            <a rel="noopener noreferrer" href="#"
+              class="flex items-center px-4 -mb-1 dark:border-transparent">Shop</a>
+          </li>
+          <li class="flex ">
+            <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 dark:border-transparent">All
+              Fruits</a>
+          </li>
+            
+            </ul>
+          </div>
+        
+        
+
         </div>
       </header>
     </nav>
